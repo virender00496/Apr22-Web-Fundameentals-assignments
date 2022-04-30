@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .RegistrationForm{
+            text-align: center;
+            background-color: rgb(219, 233, 233);
+            width: 10cm;
+            margin: 0cm auto;
+            padding: 0.2cm;
+            border-radius: 12%;
+        }
+        .margin{
+            margin: 0.1cm 0cm;
+        }
+        #phoneNo{
+            width: 3.5cm;
+        }
+        #countryCode{
+            width: 0.5cm;
+        }
+        #textarea{
+            width: 8cm;
+            height: 4cm;
+        }
+        .pwd1{
+            width: 4cm;
+        }
+        body{
+            /* background-im?age: url(https://res.cloudinary.com/practicaldev/image/fetch/s--deySAlhm--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/jh1ajwidntpxi8tj4s58.png); */
+            background-color: rgb(201, 209, 209);
+        }
+        p,label{
+            font-family: Cambria;
+        }
+    </style>
+</head>
+<body>
+    <div class="RegistrationForm">
+       <form>
+        <h3>Hello Geekster</h3>
+        <p>*Please provide the following details to register</p>
+        <br>
+        <Label class="margin">First Name:</Label>
+        <input type="text" id="FirstName" class="margin"><br>
+        <label class="margin">Last Name:</label>
+        <input type="text" id="LastName" class="margin" ><br>
+        <label for="gend">Gender</label>
+        <input type="radio" name="gend" value="male">
+        <label>Male</label>
+        <input type="radio" name="gend" value="Fe-male">
+        <label>Fe-male</label>
+
+        <div class="phone">
+            <label class="margin">Phone No. :</label>
+            <input list="countryCode" id="countryCode" class="margin" placeholder="+91">
+            <datalist id="countryCode" class="margin">
+                <option value="+91" selected></option>
+                <option value="+92"></option>
+                <option value="+93"></option>
+            </datalist>
+            <input type="number" class="margin" size="6" minlength="10" maxlength="10" id="phoneNo">
+      
+        </div>
+        <label class="margin">Qualification</label>
+        <input class="margin" type="text" class="margin" placeholder="Highest Degree Pursued"><br>
+        <label class="margin" >Enter password :</label>
+        <input type="password" class="pwd1 margin"><br>
+        <label class="margin">confirm Password :</label>
+        <input type="password" class="pwd1 margin" style="width: 3.5cm;">
+        <p>Why do you want to join Geekster?</p>
+        <textarea maxlength="200" id="textarea">
+
+        </textarea>
+        <br>
+        <button>Submit</button>
+
+      </form>
+    </div>
+</body>
+</html>

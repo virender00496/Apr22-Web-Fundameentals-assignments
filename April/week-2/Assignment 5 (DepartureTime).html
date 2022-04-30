@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p:first-child {
+            font-size: 35px;
+            font-style: bold;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(248, 248, 248);
+            margin-top: 1cm;
+        }
+
+        body {
+            background-image: url(https://images.moneycontrol.com/static-mcnews/2021/09/Air-India.jpg?impolicy=website&width=770&height=431);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .DepartureTime {
+            height: 10cm;
+            width: 10cm;
+            background-color: rgb(55, 43, 218);
+            border-radius: 1cm;
+            color: aliceblue;
+            text-align: center;
+
+        }
+
+        button {
+            text-align: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div class="DepartureTime">
+            <p>Enter Details below:</p>
+            <label for="DeparTime">Enter Departure Time:</label>
+            <input type="time" name="DeparTime"><br><br>
+            <label for="ArrTime">Enter Arrival Time:</label>
+            <input type="time" name="ArrTime"><br><br>
+
+            <button>Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>
